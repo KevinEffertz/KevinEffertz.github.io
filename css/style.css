@@ -21,8 +21,7 @@ body{
 	
 /*----------- Container holding the image and text ----------*/
 #home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.50)), url("../images/DSC5381_1584x396.JPG");
-  /*	background:	url("../images/homeoffice.jpg"); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.50)), url("../images/DSC5381_1584x396.jpg");
   background-color: #484848;
   background-position: center;
   background-repeat: no-repeat;
@@ -89,7 +88,7 @@ body{
 @media (max-width: 768px){
  .about-Grid {
    display: grid;
-   grid-template-columns: repeat(1, 1fr);
+   grid-template-columns: repeat(1, 1 fr);
    grid-template-areas: "hd-about"
 	                    "img-selfportrait"
 	                    "txt-about"
@@ -117,14 +116,14 @@ body{
 
 .education-Grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1 fr);
   grid-gap: 2rem;
  /*background-color: #E1E327;*/ 
 }
 
 .experience-Grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1 fr);
   grid-template-rows: repeat(2, auto);
   grid-gap: 2rem;
 }
@@ -159,12 +158,12 @@ body{
 
 @media (max-width: 768px) {
   .education-Grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1 fr);
     grid-template-rows: repeat(2, auto);
   }
 	
   .experience-Grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1 fr);
     grid-template-rows: repeat(4, auto);
   }
 	
@@ -181,8 +180,8 @@ body{
 }
 .skills-Grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1 fr);
+  grid-template-rows: repeat(1, 1 fr);
   grid-gap: 10px;
 }
 .skills-graphic {
@@ -206,7 +205,7 @@ body{
 }
 @media (max-width: 768px) {
   .skills-Grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1 fr);
     grid-template-rows: repeat(3, auto);
   }
   .my-fa-font-size {
@@ -219,12 +218,12 @@ body{
 }
 .contact-Grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1 fr);
   grid-template-rows: repeat(1, auto);
 }
 @media (max-width: 768px) {
   .contact-Grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1 fr);
     grid-template-rows: repeat(4, auto);
   }
   .my-fa-font-size {
