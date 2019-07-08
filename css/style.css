@@ -21,7 +21,7 @@ body{
 	
 /*----------- Container holding the image and text ----------*/
 #home {
-  background: url("../images/DSC5376.JPG");
+  background: linear-gradient(rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.50)), url("../images/DSC5381-1584x396.JPG");
   /*	background:	url("../images/homeoffice.jpg"); */
   background-color: #484848;
   background-position: center;
