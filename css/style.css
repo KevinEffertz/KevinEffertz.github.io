@@ -114,6 +114,14 @@ body{
   background: #F8F8F8;
 }
 
+.bg-lightskyblue {
+	background-color: lightskyblue !important
+}
+
+.bg-lightyellow {
+	background-color: lightyellow !important
+}
+
 .education-Grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
