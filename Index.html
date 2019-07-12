@@ -52,11 +52,11 @@
 
 <!--About-->
 <section id="about" class="py-5">
-  <div class="container about-Grid py-5"> 
+  <div class="container about-Grid"> 
     <!-- <div class="container grid-1"> --> 
     <!--  <div class="header"></div>-->
     <div class="hd-about">
-      <h1 class="font-weight-bold">About Me</h1>
+      <h1 class="font-weight-bold py-5">About Me</h1>
     </div>
     <div class="img-selfportrait"> <img src="images/DSC5345_250X395.jpg" alt="Learn about Kevin Effertz at kevineffertz.com" width="248" height="390" class="img-fluid rounded border border-dark mx-5"> </div>
     <div class="txt-about p-2">
@@ -72,8 +72,8 @@
   <!-- <h1 class="text-center py-5">Education &amp; Experience</h1>
   <div class="container educ_exper-Grid py-3">
 -->
-  <div class="container ">
-    <h1 class="text-center font-weight-bold">Education &amp; Experience</h1>
+  <div class="container">
+    <h1 class="text-center py-5 font-weight-bold">Education &amp; Experience</h1>
     <!-- Nav pills -->
     <div class="row my-3 justify-content-center">
       <ul class="nav nav-pills" role="tablist">
@@ -103,16 +103,7 @@
       <div id="experience" class="container tab-pane fade">
         <div class="experience-Grid">
           <div class="card">
-			<span class="border rounded border-dark" style="border-width:2px !important"><img class="card-img-top" src="images/WI-statute-TOC.png" alt="WI Statutory TOC"></span>
-		    <div class="card-body">
-              <h4 class="card-title"><strong>Content &amp; Database Management</strong></h4>
-              <p class="card-text"><b>Software and data engineering</b> experience in the legal content and publishing industry providing document management and editorial capabilities to internal users processing statutory and regulatory material.</p>
-              <!-- Button to Open the Modal -->
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contentDatabaseManagementModal"> Read more... </button> 
-            </div>
-          </div>
-          <div class="card">
-			<span class="border rounded border-dark" style="border-width:1px !important"> <img class="card-img-top" src="images/DigitalTransformation-Web.png" alt="Digital Transformation photo"> </span>  
+			<span class="bg-lightskyblue"> <img class="card-img-top" src="images/DigitalTransformation-Web.png" alt="Digital Transformation photo"> </span>  
 			<div class="card-body">
               <h4 class="card-title"><strong>Process Improvement &amp; Reengineering</strong></h4>
               <p class="card-text"><b>Digital transformation</b> experience migrating and modernizing legacy systems, software, and data.</p>
@@ -121,7 +112,7 @@
             </div>
           </div>
 		  <div class="card">
-			<span class="border rounded bg-warning border-dark" style="border-width:2px !important"> <img class="card-img-top" src="images/IT Support.png" alt="IT Support.png"> </span>
+			<span class="bg-warning"><img class="card-img-top" src="images/IT Support.png" alt="IT Support.png"></span>
 			<div class="card-body">
 				<h4 class="card-title"><strong>Customer Service &amp; Incident Tracking</strong></h4>
               <p class="card-text"><b>Customer Service</b> experience toubleshooting and resolving end user system and application issues.</p>
@@ -129,8 +120,17 @@
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#customerServiceModal"> Read more... </button>
             </div>
           </div>
-		  <div class="card">
-			<span class="border rounded bg-light border-dark" style="border-width:2px !important"> <img class="card-img-top" src="images/ExtractTransformLoad.png" alt="ExtractTransformLoad.png"> </span>
+		<div class="card">
+			<span class="border-bottom"><img class="card-img-top" src="images/WI-statute-TOC.png" alt="WI Statutory TOC"></span>
+		    <div class="card-body">
+              <h4 class="card-title"><strong>Content &amp; Database Management</strong></h4>
+              <p class="card-text"><b>Software and data engineering</b> experience in the legal content and publishing industry providing document management and editorial capabilities to internal users processing statutory and regulatory material.</p>
+              <!-- Button to Open the Modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contentDatabaseManagementModal"> Read more... </button> 
+            </div>
+          </div>
+          <div class="card">
+			<span class="bg-lightyellow"><img class="card-img-top" src="images/ExtractTransformLoad.png" alt="ExtractTransformLoad.png"></span>
 		    <div class="card-body">
               <h4 class="card-title"><strong>Application Development &amp; Support</strong></h4>
               <p class="card-text"><b>Extract Transform and Load(ETL)</b> experience with data capture and extraction processes, transforming content for value add via data pipelines, and loading content into global data repositories accessed by external applications.</p>
@@ -738,7 +738,7 @@ function typeWriter() {
       <!-- Modal body -->
       <div class="modal-body">
 		<div class="border rounded bg-warning mb-3 border-dark" style="border-width:3px !important"> <img class="img-fluid" src="images/WI-statute-TOC.png" alt="IT Support.png"></div>
-	    <p><strong>Customer Service</strong> experience toubleshooting and resolving end user system and application issues.</p>
+	    <p><strong>Software and data engineering</strong> experience in the legal content and publishing industry providing document management and editorial capabilities to internal users processing statutory and regulatory material.</p>
 		<ul>
 		  <li>Migrated systems from running on the mainframe, to running on client\server, to running in multi-tiered architectures.</li>
           <li>Via XSLT and SAX transformed content written in proprietary data markup to xml based markup.</li>
@@ -746,6 +746,11 @@ function typeWriter() {
         </ul>
 	  </div>
     
+	  <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    	
 	</div>
   </div>
 </div>
@@ -763,13 +768,18 @@ function typeWriter() {
       
       <!-- Modal body -->
       <div class="modal-body">
-		<div class="border rounded bg-warning mb-3 border-dark" style="border-width:3px !important"> <img class="img-fluid" src="images/DigitalTransformation-Web.png" alt="DigitalTransformation-Web.png"></div>
-	    <p><strong>Customer Service</strong> experience toubleshooting and resolving end user system and application issues.</p>
+		<div class="rounded bg-lightskyblue mb-3"> <img class="img-fluid" src="images/DigitalTransformation-Web.png" alt="DigitalTransformation-Web.png"></div>
+	    <p><strong>Digital transformation</strong> experience migrating and modernizing legacy systems, software, and data.</p>
 		<ul>
 		  <li>Migrated systems from running on the mainframe, to running on client\server, to running in multi-tiered architectures.</li>
           <li>Via XSLT and SAX transformed content written in proprietary data markup to xml based markup.</li>
         </ul>
 	  </div>
+		
+	  <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
     
 	</div>
   </div>
