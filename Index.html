@@ -20,7 +20,7 @@
 
 <!-- Navbar -->
 <header>
-  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top"  id="mainNav">
     <div class="container"> 
       <!-- Navbar brand --> 
       <a class="navbar-brand" href="#top">Kevin Effertz</a> 
@@ -59,7 +59,7 @@
     <div class="hd-about">
       <h1 class="font-weight-bold py-5">About Me</h1>
     </div>
-    <div class="img-selfportrait"> <img src="images/DSC5345_250X395.jpg" alt="Learn about Kevin Effertz at kevineffertz.com" width="248" height="390" class="img-fluid rounded border border-dark mx-5"> </div>
+    <div class="img-selfportrait"> <img src="images/DSC5345_250X395.jpg" alt="Learn about Kevin Effertz at kevineffertz.com"  class="img-fluid rounded border border-dark mx-5"> </div>
     <div class="txt-about p-2">
       <p>I have always been drawn to the process of learning and serving.  Passionately sowing and cultivating these two gifts into work, family, and community give meaning to life's journey.</p>
       <p>Digital technology continues to revolutionize the world.  The Internet of Things(IoT) is causing our world to be more connected through material mediums than ever before.  Smart phones have changed with way we communicate, know information, engage people, and relate to our surroundings. </p>
@@ -71,7 +71,7 @@
   </div>
 </section>
 <!--Education & Experience-->
-<section id="education_and_experience" class="py-5 "> 
+<section id="education_and_experience" class="py-5"> 
   <!-- <h1 class="text-center py-5">Education &amp; Experience</h1>
   <div class="container educ_exper-Grid py-3">
 -->
@@ -526,8 +526,8 @@
             <div class="d-flex">
               <div>ETL</div>
               <div class="star-gold-filled ml-auto
-" >&#x2605;&#x2605;&#x2605;&#x2605;</div>
-              <div class="star-empty">&#x2606;</div>
+" >&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+              <div class="star-empty"></div>
             </div>
           </li>
           <li class="list-group-item">
@@ -667,7 +667,7 @@
 </section>
 
 <!--Copyright-->
-<section id="copyright" >
+<section class="p-3" id="copyright">
   <p class="text-white text-center" >Copyright &copy; <script>document.write(new Date().getFullYear());</script> Kevin Effertz. All rights reserved.</p>
 </section>
 
@@ -681,6 +681,24 @@
 <!--<script src="js/bootstrap-4.3.1.js"></script> --> 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
 
+
+
+<!-- Custom scripts for this template -->
+<script src="js/navshrink.js"></script>
+
+<script>
+// Add class to Navbar when page is scrolled
+$(window).on('activate.bs.scrollspy', function() {
+
+	console.log('active.bs.scrollspy');
+ 
+});
+</script>
+	
+	
+
+	
+	
 <!--<script src="lib/typed/typed.min.js"></script>--> 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script> 
 <script>
@@ -709,7 +727,7 @@ function typeWriter() {
 --> 
 
 
-<!--Animate scrolling in navigation bar, --> 
+<!--Animate scrolling in navigation bar --> 
 <script type="text/javascript">
 		$(document).ready(function(){
 		$('a[href^="#"][href!="#experience"][href!="#education"]').on('click',function (e) {e.preventDefault();
