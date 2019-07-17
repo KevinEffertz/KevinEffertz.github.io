@@ -200,11 +200,11 @@ body{
 }
 .about-Grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
-  grid-gap: 2rem;
-  grid-template-areas: "hd-about         hd-about"
-	                   "img-selfportrait txt-about";
+ /* grid-gap: 1rem;*/
+  grid-template-areas: "hd-about         hd-about  hd-about"
+	                   "img-selfportrait txt-about txt-about";
 }
 .img-selfportrait {
   grid-area: img-selfportrait;
@@ -212,12 +212,13 @@ body{
 }
 .hd-about {
   grid-area: hd-about;
-  grid-colum: 1 / 3;
+  grid-colum: 1 / 4;
   text-align: center;
 }
 .txt-about {
   grid-area: txt-about;
-  grid-column: 2 / 3; 
+  grid-column: 2 / 4; 
+  justify-self: left;
   /* line-height: 2; */
   font-family: 'Cedarville Cursive', cursive;
 }
@@ -234,8 +235,8 @@ body{
 	
   .img-selfportrait {
     grid-area: img-selfportrait;
-	text-align: center;
- 
+	align-self: start;
+    justify-self: center;
   }
   .hd-about {
     grid-area: hd-about;
