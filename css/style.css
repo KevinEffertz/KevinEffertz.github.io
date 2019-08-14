@@ -343,6 +343,28 @@ body{
 
 }
 
+/*Nav pills-for devices with viewport width under 410 (Samsung Galaxy S7, etc.)*/
+@media (max-width: 410px) {
+  	
+  .button-size {
+	font-size: .77rem;
+  }
+
+}
+
+
+}
+
+
+/*
+@media (max-width: 420px) {
+ 
+  .button-size {
+	font-size: .75rem;
+  }
+
+}
+*/
 
 /*--------- Skills section ----------------*/
 #skills {
