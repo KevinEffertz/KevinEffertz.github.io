@@ -260,6 +260,13 @@ body{
 	background-color: lightyellow !important
 }
 
+.experience-Grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 2rem;
+}
+
 .education-Grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -267,12 +274,13 @@ body{
  /*background-color: #E1E327;*/ 
 }
 
-.experience-Grid {
+.service-Grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, auto);
-  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
+  grid-gap: .5rem;  
+ /*background-color: #E1E327;*/ 
 }
+
 
 /*not active*/
 .nav-pills .pill-1 .nav-link:not(.active) {
@@ -282,6 +290,12 @@ body{
 }
 
 .nav-pills .pill-2 .nav-link:not(.active) {
+   /* background-color: rgba(0, 250, 0, 1.0); */
+	background-color: rgba(0,123,255,.35);
+	color: rgba(255,255,255,1.00);
+}
+
+.nav-pills .pill-3 .nav-link:not(.active) {
    /* background-color: rgba(0, 250, 0, 1.0); */
 	background-color: rgba(0,123,255,.35);
 	color: rgba(255,255,255,1.00);
@@ -298,21 +312,31 @@ body{
 	color: rgba(255,255,255,1.00);
 }
 
+.nav-pills .pill-3 .nav-link {
+   background-color: rgba(0,123,255,1.00);
+	color: rgba(255,255,255,1.00);
+}
+
 .button-size {
 	font-size: 1.5rem;
 }
 
 @media (max-width: 768px) {
+  .experience-Grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, auto);
+  }
+
   .education-Grid {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, auto);
   }
 	
-  .experience-Grid {
+  .service-Grid {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
   }
-	
+ 	
   .button-size {
 	font-size: 1rem;
   }
