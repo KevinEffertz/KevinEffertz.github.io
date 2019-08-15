@@ -343,11 +343,16 @@ body{
 
 }
 
-/*Nav pills-for devices with viewport width under 410 (Samsung Galaxy S7, etc.)*/
+/*Nav pills-for devices with viewport width under 410 (Samsung Galaxy S7, iPhone5, iPod Touch, etc.)*/
 @media (max-width: 410px) {
   	
   .button-size {
 	font-size: .77rem;
+  }
+	
+  .nav-link {
+    display: block;
+    padding: 0.30rem .60rem;
   }
 
 }
