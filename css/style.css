@@ -274,12 +274,6 @@ body{
  /*background-color: #E1E327;*/ 
 }
 
-.service-Grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
-  grid-gap: .5rem;  
- /*background-color: #E1E327;*/ 
-}
 
 
 /*not active*/
@@ -332,48 +326,29 @@ body{
     grid-template-rows: repeat(2, auto);
   }
 	
-  .service-Grid {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, auto);
-  }
- 	
   .button-size {
 	font-size: 1rem;
   }
 
 }
 
-/*Nav pills-for devices with viewport width under 410 (Samsung Galaxy S7, iPhone5, iPod Touch, etc.)*/
-@media (max-width: 410px) {
-  	
-  .button-size {
-	font-size: .77rem;
-  }
-	
-  .nav-link {
-    display: block;
-    padding: 0.30rem .60rem;
-  }
 
+/*--------- Video section ----------------*/
+#video {
+  background: #E9EBFC;
 }
 
-
+.video-Grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
+  grid-gap: .5rem;  
+ /*background-color: #E1E327;*/ 
 }
 
-
-/*
-@media (max-width: 420px) {
- 
-  .button-size {
-	font-size: .75rem;
-  }
-
-}
-*/
 
 /*--------- Skills section ----------------*/
 #skills {
-  background: #E9EBFC;
+  background: #F8F8F8;
 }
 .skills-Grid {
   display: grid;
@@ -411,7 +386,7 @@ body{
 }
 /*--------- Contact section ----------------*/
 #contact {
-  background: #F8F8F8;
+  background: #E9EBFC;
 }
 .contact-Grid {
   display: grid;
