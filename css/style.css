@@ -220,7 +220,7 @@ body{
   grid-column: 2 / 4; 
   justify-self: left;
   /* line-height: 2; */
-  font-family: 'Cedarville Cursive', cursive;
+  font-family: 'Convergence', sans-serif;
 }
 
 @media (max-width: 768px){
